@@ -1,6 +1,9 @@
 :root {
   --main-red: #FF2626;
   --main-black: #2e2e2e;
+  --main-white: #f6f6f6;
+  --transparent-red: #ff2424a6;
+  --support-pink: #FF7373;
 }
 
 body {
@@ -25,5 +28,5 @@ code {
 
 html {
   font-size: 62.5%;
-  background-color: var(--main-black);
+  background-color: var(--main-white);
 }

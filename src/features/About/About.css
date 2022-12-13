@@ -1,0 +1,89 @@
+#about {
+    margin: 5rem 0;
+    height: 70vh;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--support-pink);
+    border-radius: 10px;
+}
+
+.about-text {
+    width: 50%;
+    height: 100%;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.about-figure {
+    height: 100%;
+    width: 50%;
+}
+
+.about-h2 {
+    font-size: 3rem;
+    margin-bottom: 2.4rem;
+}
+
+.about-p {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    text-align: justify;
+}
+
+.about-img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center 75%;
+    border-radius: 10px;
+    vertical-align: top
+}
+
+@media only screen and (max-width: 768px) {
+    #about {
+        margin: 0;
+        width: 100%;
+        background-image: url(../../images/paulo-doi-6uTQmtqcAzs-unsplash.jpg);
+        background-size: cover;
+        background-position: center;
+        border-radius: 0;
+    }
+
+    .about-figure {
+        display: none;
+    }
+
+    .about-text {
+        width: 80%;
+        height: 80%;
+        background-color: var(--transparent-red);
+        border-radius: 10px;
+    }
+}
+
+@media only screen and (max-width: 518px) {
+    .about-h2 {
+        margin-bottom: 1rem;
+    }
+
+    .about-p {
+        margin-bottom: 0.6rem;
+    }
+}
+
+@media only screen and (max-width: 390px) {
+    .about-h2 {
+        font-size: 2.4rem;
+    }
+
+    .about-p {
+        font-size: 1.6rem;
+    }
+}

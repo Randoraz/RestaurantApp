@@ -1,15 +1,19 @@
 import React from 'react';
 // import logo from './logo.svg';
 // import { Counter } from './features/counter/Counter';
-import './features/Header/Header';
+import './features/NavBar/NavBar';
 import './App.css';
-import { Header } from './features/Header/Header';
+import { NavBar } from './features/NavBar/NavBar';
+import { Hero } from './features/Hero/Hero';
+import { About } from './features/About/About';
 
 function App() {
   return (
     <div className="App">
-      <Header />
-
+      <Hero />
+      <NavBar />
+      <About />
+      
       {/* <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <Counter />
