@@ -1,0 +1,10 @@
+#menu {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    height: 50vh;
+    background-color: var(--support-pink);
+    border-radius: 10px;
+    margin: 5rem 0;
+}

@@ -29,4 +29,5 @@ code {
 html {
   font-size: 62.5%;
   background-color: var(--main-white);
+  width: 100%;
 }

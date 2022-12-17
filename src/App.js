@@ -6,12 +6,14 @@ import './App.css';
 import { NavBar } from './features/NavBar/NavBar';
 import { Hero } from './features/Hero/Hero';
 import { About } from './features/About/About';
+import { Menu } from './features/Menu/Menu';
 
 function App() {
   return (
     <div className="App">
       <Hero />
       <NavBar />
+      <Menu />
       <About />
       
       {/* <header className="App-header">

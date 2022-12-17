@@ -21,3 +21,13 @@
     font-size: 2.4rem;
     text-decoration: none;
 }
+
+@media only screen and (max-width: 768px) {
+    #restaurant-logo {
+        display: none;
+    }
+
+    .header-link {
+        font-size: 2rem;
+    }
+}
