@@ -16,13 +16,20 @@ import rice from '../../images/mgg-vitchakorn-zXNC_lBBVGE-unsplash.jpg';
 
 export const Menu = () => {
     const [current, setCurrent] = useState(0);
+    const [currentTimeOut, setCurrentTimeOut] = useState();
+
     useEffect(() => {
-        setTimeout(() => {
+        if(currentTimeOut)
+            clearTimeout(currentTimeOut);
+
+        const myTimeOut = setTimeout(() => {
             if(current + 1 >= dishes.length)
                 setCurrent(0);
             else
                 setCurrent(current + 1);
         }, 5000);
+
+        setCurrentTimeOut(myTimeOut);
     }, [current]);
 
 
@@ -44,10 +51,17 @@ export const Menu = () => {
         img: soba
     }
 
+    const sushiDish = {
+        name: 'Sushi',
+        description: 'Diverse kinds of niguiri sushi for you to find your favorite',
+        img: sushi
+    }
+
     const dishes = [];
     dishes.push(ramenDish);
     dishes.push(katsuDish);
     dishes.push(sobaDish);
+    dishes.push(sushiDish);
 
     return (
         <section id="menu">
@@ -57,6 +71,14 @@ export const Menu = () => {
                 else
                     return <Dish display='hide' dishName={dish.name} description={dish.description} img={dish.img} key={`dish${index}`} />
             })}
+            <div className="carosel-dots">
+            {dishes.map((dish, index) => {
+                if(index === current)
+                    return <button className="carosel-dot selected" onClick={() => {setCurrent(index);}} key={`caroselDot${index}`}></button>
+                else
+                    return <button className="carosel-dot" onClick={() => {setCurrent(index);}} key={`caroselDot${index}`}></button>
+            })}
+            </div>
         </section>
     )
 }

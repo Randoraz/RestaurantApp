@@ -43,3 +43,31 @@
 .hide {
     opacity: 0;
 }
+
+@media only screen and (max-width: 768px) {
+    .dish {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        transition: opacity 0.4s linear;
+    }
+
+    .dish-text {
+        width: 100%;
+        height: 35%;
+        padding: 2rem;
+    }
+
+    .dish-figure {
+        width: 100%;
+        height: 50%;
+    }
+
+    .dish-img {
+        border-radius: 0;
+    }
+}
