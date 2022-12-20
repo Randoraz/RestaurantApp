@@ -1,18 +1,13 @@
 import React from 'react';
 // import logo from './logo.svg';
 // import { Counter } from './features/counter/Counter';
-import './features/NavBar/NavBar';
 import './App.css';
-import { NavBar } from './features/NavBar/NavBar';
-import { Hero } from './features/Hero/Hero';
-import { About } from './features/About/About';
-import { Menu } from './features/Menu/Menu';
+import { About } from '../../features/About/About';
+import { Menu } from '../../features/Menu/Menu';
 
 function App() {
   return (
     <div className="App">
-      <Hero />
-      <NavBar />
       <About />
       <Menu />
       
