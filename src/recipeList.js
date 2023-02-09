@@ -12,61 +12,71 @@ import rice from './images/mgg-vitchakorn-zXNC_lBBVGE-unsplash.jpg';
 const ramenDish = {
     name: 'Ramen',
     description: 'Delicious ramen with a rich soup',
-    img: ramen
+    img: ramen,
+    category: 'Noodles'
 }
 
 const katsuDish = {
     name: 'Chicken Katsu Curry',
     description: 'Curry and rice with an extra juicy chicken katsu',
-    img: katsu
+    img: katsu,
+    category: 'Bowls'
 }
 
 const sobaDish = {
     name: 'Soba',
     description: 'Soba noodles served hot or cold',
-    img: soba
+    img: soba,
+    category: 'Noodles'
 }
 
 const sushiDish = {
     name: 'Sushi',
     description: 'Diverse kinds of niguiri sushi for you to find your favorite',
-    img: sushi
+    img: sushi,
+    category: 'Sushi'
 }
 
 const udonDish = {
     name: 'Udon',
     description: 'Warm udon noodles with a soup which tastes like home',
-    img: udon
+    img: udon,
+    category: 'Noodles'
 }
 
 const sushiComboDish = {
     name: 'Sushi Combo',
     description: 'Special kinds of sushi that show that great flavor can go together with health',
-    img: sushiCombo
+    img: sushiCombo,
+    category: 'Sushi'
 }
 
 const takoyakiDish = {
     name: 'Takoyaki',
     description: 'Fried dumplings stuffed with delicious octopus and complemented with Japanese mayonese and teriyaki sauce',
-    img: takoyaki
+    img: takoyaki,
+    category: 'Snacks'
 }
 
 const gyozaDish = {
     name: 'Gyoza',
     description: 'Dumplings, fried or cooked in steam, filled with a delicious mix of pig meat and vegetables',
-    img: gyoza
+    img: gyoza,
+    category: 'Snacks'
 }
 
 const tayakiDish = {
     name: 'Tayaki',
     description: 'Japanese fish-shaped cake filled with sweet red bean paste',
-    img: tayaki
+    img: tayaki,
+    category: 'Desserts'
 }
 
 const riceDish = {
     name: 'Rice',
     description: 'A warm bowl of rice to complement your meal',
-    img: rice
+    img: rice,
+    category: 'Complements'
 }
 
 const dishes = [];
