@@ -17,7 +17,7 @@ export const NavBar = () => {
                     <a href="#order" className="header-link">Order</a>
                 </li>
                 <li className="navbar-list">
-                    <a href="#address" className="header-link">Address</a>
+                    <Link to={"address"} className="header-link">Address</Link>
                 </li>
             </div>
         </nav>

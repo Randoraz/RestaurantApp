@@ -1,0 +1,25 @@
+.address {
+    text-align: center;
+}
+
+.address-info {
+    padding: 5rem;
+    width: 20vw;
+    margin: auto;
+    background-color: var(--support-pink);
+    border-radius: 10px;
+}
+
+.address h2 {
+    font-size: 3rem;
+    margin: 2rem auto;
+}
+
+.address p {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.map-div {
+    margin: 3rem auto;
+}
