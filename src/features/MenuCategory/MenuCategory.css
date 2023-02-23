@@ -1,9 +1,17 @@
 .menu-category {
+    width: 60%;
     margin: 2rem 0;
+    background-color: var(--support-pink);
+    border-radius: 10px;
 }
 
 .menu-category-name {
+    width: 90%;
     font-size: 2rem;
+    margin: 2rem auto;
+    padding-bottom: 2rem;
+    color: var(--main-black);
+    border-bottom: 0.1rem solid var(--main-black);
 }
 
 .menu-dishes-div {
@@ -18,6 +26,7 @@
 
 .menu-dish-name {
     font-size: 1.6rem;
+    color: var(--main-black);
 }
 
 .menu-dish-img {
@@ -25,4 +34,24 @@
     height: 10vw;
     object-fit: cover;
     border-radius: 50%;
+}
+
+.hidden-menu-category {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 1s;
+    will-change: opacity, filter, transform;
+}
+
+.show-menu-category {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+
+@media(prefers-reduced-motion) {
+    .hidden-menu-category {
+        transition: none;
+    }
 }

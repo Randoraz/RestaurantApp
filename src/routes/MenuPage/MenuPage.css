@@ -1,7 +1,13 @@
 #menu-page {
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .menu-title {
     font-size: 3rem;
+    margin-top: 2rem;
+    color: var(--main-black);
 }

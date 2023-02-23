@@ -1,7 +1,6 @@
 import React from "react";
 import { useSelector } from "react-redux";
 import { selectRecipes } from "../../store/recipesSlice";
-import { Menu } from "../../features/Menu/Menu";
 import { MenuCategory } from "../../features/MenuCategory/MenuCategory";
 import './MenuPage.css';
 
@@ -41,7 +40,6 @@ const MenuPage = () => {
             <MenuCategory name="Snacks" dishes={snacks} />
             <MenuCategory name="Complements" dishes={complements} />
             <MenuCategory name="Desserts" dishes={desserts} />
-            <Menu />
         </div>
     );
 }
