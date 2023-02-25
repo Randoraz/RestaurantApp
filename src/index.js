@@ -6,6 +6,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Root from './routes/Root/Root';
 import App from './routes/App/App';
 import MenuPage from './routes/MenuPage/MenuPage';
+import Order from './routes/Order/Order';
 import Address from './routes/Address/Address';
 import reportWebVitals from './reportWebVitals';
 import './index.css';
@@ -27,9 +28,13 @@ const router = createBrowserRouter([
         element: <MenuPage />
       },
       {
+        path: "order",
+        element: <Order />
+      },
+      {
         path: "address",
         element: <Address />
-      }
+      },
     ]
   },
 ]);

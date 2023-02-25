@@ -1,0 +1,20 @@
+.order {
+    text-align: center;
+}
+
+.order h2 {
+    font-size: 3rem;
+    margin: 2rem auto;
+}
+
+.order input {
+    margin-bottom: 2rem;
+    height: 2.4rem;
+    width: 30%;
+}
+
+.order label {
+    margin-bottom: 0.8rem;
+    display: inline-block;
+    font-size: 2rem;
+}
