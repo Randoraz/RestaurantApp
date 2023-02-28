@@ -1,0 +1,46 @@
+.dish-order-div {
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+    border: 0.1rem solid var(--main-black);
+    border-radius: 10px;
+}
+
+.dish-order-div > p {
+    font-size: 1.6rem;
+}
+
+.dish-order-div img {
+    border-radius: 10px;
+}
+
+.dish-number {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dish-number button {
+    width: 3.6rem;
+    height: 3.6rem;
+    font-size: 1.6rem;
+    background-color: var(--main-red);
+    color: var(--main-white);
+    font-weight: 600;
+    border: 0.1rem solid var(--main-black);
+    border-radius: 10px;
+}
+
+.dish-number button:is(:hover, :focus) {
+    background-color: var(--main-white);
+    color: var(--main-red);
+    border-color: var(--main-red);
+}
+
+.dish-number p {
+    margin: auto 2rem;
+    font-size: 1.6rem;
+}

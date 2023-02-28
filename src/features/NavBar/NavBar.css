@@ -35,7 +35,14 @@
     text-decoration: none;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1100px) {
+    .header-link {
+        font-size: 2rem;
+        margin-left: -1rem;
+    }
+}
+
+@media only screen and (max-width: 775px) {
     #restaurant-logo {
         display: none;
     }
@@ -44,10 +51,6 @@
         margin: 0;
         width: 100%;
         justify-content: space-around;
-    }
-
-    .navbar-list {
-        list-style: none;
     }
 
     .header-link {
