@@ -12,6 +12,10 @@ export const orderSlice = createSlice({
             state.currentOrder = {};
         },
 
+        addAddress(state, action) {
+            state.currentOrder.address = action.payload;
+        },
+
         addDish(state, action) {
             if(action.payload in state.currentOrder)
                 state.currentOrder[action.payload] = state.currentOrder[action.payload] + 1;
@@ -32,6 +36,7 @@ export const orderSlice = createSlice({
 
 export const {
     addOrder,
+    addAddress,
     addDish,
     removeDish
 } = orderSlice.actions;

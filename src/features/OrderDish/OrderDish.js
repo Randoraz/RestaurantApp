@@ -7,12 +7,12 @@ export const OrderDish = ({num, dish}) => {
     const dispatch = useDispatch();
     return (
         <div className="dish-order-div">
-            <img src={dish.imgIcon} />
+            <img src={dish.imgIcon} alt={dish.name} />
             <p>{dish.name}</p>
             <div className="dish-number">
-                <button onClick={() => {dispatch(addDish(dish.name))}}>+</button>
+                <button type="button" onClick={() => {dispatch(addDish(dish.name))}}>+</button>
                 <p>{num || 0}</p>
-                <button onClick={() => {dispatch(removeDish(dish.name))}}>-</button>
+                <button type="button" onClick={() => {dispatch(removeDish(dish.name))}}>-</button>
             </div>
         </div>
     );

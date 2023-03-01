@@ -2,8 +2,7 @@ import React, { useState } from "react";
 import { useDispatch } from "react-redux";
 import { useSelector } from "react-redux";
 import { selectRecipes } from "../../store/recipesSlice";
-import { selectCurrentOrder } from "../../store/orderSlice";
-import { addOrder } from "../../store/orderSlice";
+import { selectCurrentOrder, addOrder, addAddress } from "../../store/orderSlice";
 import './Order.css';
 import OrderDish from "../../features/OrderDish/OrderDish";
 
@@ -31,6 +30,12 @@ export const Order = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
+        dispatch(addAddress({
+            street: street,
+            postalCode: postalCode,
+            city: city
+        }));
+        dispatch(addOrder());
     };
 
     return (
