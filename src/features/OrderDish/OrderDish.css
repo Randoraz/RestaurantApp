@@ -44,3 +44,17 @@
     margin: auto 2rem;
     font-size: 1.6rem;
 }
+
+@media only screen and (max-width: 768px) {
+    .dish-order-div {
+        grid-template-columns: 1fr 2fr 1fr;
+    }
+
+    .dish-number {
+        flex-direction: column;
+    }
+
+    .dish-number p {
+        margin: 1.2rem;
+    }
+}

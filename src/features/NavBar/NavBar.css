@@ -57,3 +57,13 @@
         font-size: 2rem;
     }
 }
+
+@media only screen and (max-width: 375px) {
+    .navbar-list::marker {
+        font-size: 1.6rem;
+    }
+
+    .header-link {
+        font-size: 1.6rem;
+    }
+}
