@@ -29,7 +29,7 @@ export const MenuCategory = ({name, dishes}) => {
                             <h4 className="menu-dish-name">{dish.name}</h4>
                         </div>
                     );
-                })};
+                })}
             </div>
             
         </div>
