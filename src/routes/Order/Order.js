@@ -7,15 +7,21 @@ import './Order.css';
 import OrderDish from "../../features/OrderDish/OrderDish";
 
 export const Order = () => {
+    const [name, setName] = useState('');
     const [street, setStreet] = useState('');
     const [postalCode, setPostalCode] = useState('');
     const [city, setCity] = useState('');
+    const [request, setRequest] = useState('');
     const [orderSuccess, setOrderSuccess] = useState(false);
 
     const dispatch = useDispatch();
 
     const dishes = useSelector(selectRecipes);
     const order = useSelector(selectCurrentOrder);
+
+    const handleNameOnChange = (e) => {
+        setName(e.target.value);
+    };
 
     const handleStreetOnChange = (e) => {
         setStreet(e.target.value);
@@ -29,6 +35,10 @@ export const Order = () => {
         setCity(e.target.value);
     };
 
+    const handleRequestOnChange = (e) => {
+        setRequest(e.target.value);
+    };
+
     const handleSubmit = (e) => {
         e.preventDefault();
 
@@ -39,9 +49,11 @@ export const Order = () => {
         };
 
         dispatch(addAddress({
+            name: name,
             street: street,
             postalCode: postalCode,
-            city: city
+            city: city,
+            request: request
         }));
         dispatch(addOrder());
         setOrderSuccess(true);
@@ -63,7 +75,12 @@ export const Order = () => {
 
                 {orderSuccess && <p className="success-message">Your order was made!</p>}
 
-                <h3>Fill in your address</h3>
+                <h3>Fill in your information and address</h3>
+
+                <label htmlFor="name">Name</label>
+                <br></br>
+                <input id="name" type="text" onChange={handleNameOnChange} value={name} required></input>
+                <br></br>
 
                 <label htmlFor="street-address">Street Address</label>
                 <br></br>
@@ -78,6 +95,11 @@ export const Order = () => {
                 <label htmlFor="city">City</label>
                 <br></br>
                 <input id="city" type="text" onChange={handleCityOnChange} value={city} required></input>
+                <br></br>
+
+                <label htmlFor="request">Especial Requests</label>
+                <br></br>
+                <textarea id="request" onChange={handleRequestOnChange} value={request}></textarea>
                 <br></br>
 
                 <button type="submit" className="submit-order-button" onClick={handleSubmit}>Place order</button>

@@ -30,6 +30,13 @@
     font-size: 2rem;
 }
 
+.order textarea {
+    font-family: 'Lato';
+    height: 10rem;
+    max-width: 30rem;
+    width: 100%;
+}
+
 .order .success-message {
     display: block;
     max-width: 45rem;

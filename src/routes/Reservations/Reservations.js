@@ -1,7 +1,7 @@
 import React from "react";
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
 import { useState, useEffect } from "react";
-import { selectFreeTables, addReservation } from "../../store/reservationsSlice";
+import { addReservation } from "../../store/reservationsSlice";
 import './Reservations.css';
 
 export const Reservations = () => {
@@ -13,8 +13,6 @@ export const Reservations = () => {
     const [reservationSuccess, setReservationSuccess] = useState(false);
 
     const dispatch = useDispatch();
-
-    const freeTables = useSelector(selectFreeTables);
 
     useEffect(() => {
         document.getElementById('date').min = new Date().toISOString().split("T")[0];
