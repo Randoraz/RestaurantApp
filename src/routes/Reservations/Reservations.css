@@ -1,47 +1,48 @@
-.order {
+.reservations {
     text-align: center;
 }
 
-.order h2 {
+.reservations h2 {
     font-size: 3rem;
     margin: 2rem auto;
 }
 
-.order h3 {
+.reservations h3 {
     font-size: 2rem;
     margin: 2rem auto;
 }
 
-.order form {
+.reservations form {
     display: inline-block;
     width: clamp(30rem, 50vw, 70rem);
 }
 
-.order input {
+.reservations input {
     margin-bottom: 2rem;
     height: 2.4rem;
     max-width: 30rem;
     width: 100%;
 }
 
-.order label {
+.reservations label {
     margin-bottom: 0.8rem;
     display: inline-block;
     font-size: 2rem;
 }
 
-.order .success-message {
+.reservations .success-message {
     display: block;
     max-width: 45rem;
     color: var(--main-white);
     background-color: var(--support-green);
     padding: 1rem;
-    margin: 2rem auto;
+    margin: auto;
+    margin-bottom: 2rem;
     font-size: 2rem;
     border-radius: 10px;
 }
 
-.order .submit-order-button {
+.reservations .submit-order-button {
     margin-top: 2rem;
     margin-bottom: 5rem;
     padding: 1rem;
@@ -53,7 +54,7 @@
     border-radius: 10px;
 }
 
-.order .submit-order-button:is(:hover, :focus) {
+.reservations .submit-order-button:is(:hover, :focus) {
     background-color: var(--main-white);
     color: var(--main-red);
     border: 0.2rem solid var(--main-red);

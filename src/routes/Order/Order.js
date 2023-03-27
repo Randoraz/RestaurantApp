@@ -10,6 +10,7 @@ export const Order = () => {
     const [street, setStreet] = useState('');
     const [postalCode, setPostalCode] = useState('');
     const [city, setCity] = useState('');
+    const [orderSuccess, setOrderSuccess] = useState(false);
 
     const dispatch = useDispatch();
 
@@ -30,18 +31,26 @@ export const Order = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
+
+        const form = document.getElementById('order-form');
+        if(!form.checkValidity()) {
+            form.reportValidity();
+            return;
+        };
+
         dispatch(addAddress({
             street: street,
             postalCode: postalCode,
             city: city
         }));
         dispatch(addOrder());
+        setOrderSuccess(true);
     };
 
     return (
         <div className="order">
             <h2>Place your order now!</h2>
-            <form onSubmit={handleSubmit}>
+            <form id="order-form" onSubmit={handleSubmit}>
                 <h3>Select your food</h3>
 
                 <ol className="dishes-list-div">
@@ -52,21 +61,23 @@ export const Order = () => {
                 })}
                 </ol>
 
+                {orderSuccess && <p className="success-message">Your order was made!</p>}
+
                 <h3>Fill in your address</h3>
 
                 <label htmlFor="street-address">Street Address</label>
                 <br></br>
-                <input id="street-address" type="text" onChange={handleStreetOnChange} value={street}></input>
+                <input id="street-address" type="text" onChange={handleStreetOnChange} value={street} required></input>
                 <br></br>
                 
                 <label htmlFor="postal-code">Postal Code</label>
                 <br></br>
-                <input id="postal-code" type="number" onChange={handlePostalCodeOnChange} value={postalCode}></input>
+                <input id="postal-code" type="number" onChange={handlePostalCodeOnChange} value={postalCode} required></input>
                 <br></br>
 
                 <label htmlFor="city">City</label>
                 <br></br>
-                <input id="city" type="text" onChange={handleCityOnChange} value={city}></input>
+                <input id="city" type="text" onChange={handleCityOnChange} value={city} required></input>
                 <br></br>
 
                 <button type="submit" className="submit-order-button" onClick={handleSubmit}>Place order</button>
