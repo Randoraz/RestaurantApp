@@ -49,6 +49,7 @@
 
     #navbar-links {
         margin: 0;
+        margin-left: 3%;
         width: 100%;
         justify-content: space-around;
     }

@@ -6,7 +6,7 @@ export const NavBar = () => {
     return (
         <nav id="navbar">
             <Link to={""} id="restaurant-logo">Atatakai</Link>
-            <div id="navbar-links">
+            <ul id="navbar-links">
                 <li className="navbar-list">
                     <Link to={"menu"} className="header-link">Menu</Link>
                 </li>
@@ -19,7 +19,7 @@ export const NavBar = () => {
                 <li className="navbar-list">
                     <Link to={"address"} className="header-link">Address</Link>
                 </li>
-            </div>
+            </ul>
         </nav>
     );
 }

@@ -19,6 +19,7 @@
 
 .dish-name {
     font-size: 3rem;
+    margin-bottom: 2rem;
 }
 
 .dish-description {
@@ -71,5 +72,11 @@
 
     .dish-img {
         border-radius: 0;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    .dish-name {
+        font-size: 2.4rem;
     }
 }

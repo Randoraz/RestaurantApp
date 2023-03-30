@@ -9,7 +9,7 @@
 }
 
 .dish-order-div > p {
-    font-size: 1.6rem;
+    font-size: 2rem;
 }
 
 .dish-order-div img {
@@ -48,6 +48,10 @@
 @media only screen and (max-width: 768px) {
     .dish-order-div {
         grid-template-columns: 1fr 2fr 1fr;
+    }
+
+    .dish-order-div > p {
+        margin-left: 0.6rem;
     }
 
     .dish-number {

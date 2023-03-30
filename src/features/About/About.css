@@ -38,6 +38,11 @@
     text-align: justify;
 }
 
+.about-p:not(:last-of-type) {
+    border-bottom: 0.2rem dashed var(--main-black);
+    padding-bottom: 12%;
+}
+
 .about-img {
     height: 100%;
     width: 100%;
@@ -78,6 +83,10 @@
 
     .about-p {
         margin-bottom: 0.6rem;
+    }
+
+    .about-p:not(:last-of-type) {
+        border-bottom: 0.2rem dashed var(--main-white);
     }
 }
 
