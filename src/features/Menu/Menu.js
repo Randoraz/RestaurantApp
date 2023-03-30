@@ -37,9 +37,9 @@ export const Menu = () => {
             <div className="carosel-dots">
             {recipes.map((dish, index) => {
                 if(index === current)
-                    return <button className="carosel-dot selected" onClick={() => {setCurrent(index);}} key={`caroselDot${index}`}></button>
+                    return <button className="carosel-dot selected" aria-label={dish.name} onClick={() => {setCurrent(index);}} key={`caroselDot${index}`}></button>
                 else
-                    return <button className="carosel-dot" onClick={() => {setCurrent(index);}} key={`caroselDot${index}`}></button>
+                    return <button className="carosel-dot" aria-label={dish.name} onClick={() => {setCurrent(index);}} key={`caroselDot${index}`}></button>
             })}
             </div>
         </section>

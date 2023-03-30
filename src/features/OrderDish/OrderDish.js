@@ -10,9 +10,9 @@ export const OrderDish = ({num, dish}) => {
             <img src={dish.imgIcon} alt={dish.name} />
             <p>{dish.name}</p>
             <div className="dish-number">
-                <button type="button" onClick={() => {dispatch(addDish(dish.name))}}>+</button>
+                <button type="button" aria-label={`Add one ${dish.name}`} onClick={() => {dispatch(addDish(dish.name))}}>+</button>
                 <p>{num || 0}</p>
-                <button type="button" onClick={() => {dispatch(removeDish(dish.name))}}>-</button>
+                <button type="button" aria-label={`Remove one ${dish.name}`} onClick={() => {dispatch(removeDish(dish.name))}}>-</button>
             </div>
         </div>
     );

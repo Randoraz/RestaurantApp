@@ -1,8 +1,13 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import './About.css';
-import aboutImg from '../../images/paulo-doi-6uTQmtqcAzs-unsplash.jpg';
+import aboutImg from '../../images/edited/japanese-dishes-full.webp';
 
 export const About = () => {
+    const [src, setSrc] = useState('');
+    useEffect(() => {
+        setSrc(aboutImg);
+    }, []);
+
     return (
         <section id="about">
             <div className="about-text">
@@ -21,7 +26,7 @@ export const About = () => {
                 </p>
             </div>
             <figure className="about-figure">
-                <img className="about-img" src={aboutImg} alt="Bowl of ramen" />
+                <img className="about-img" src={src} alt="Bowl of ramen" />
             </figure>
         </section>
     );

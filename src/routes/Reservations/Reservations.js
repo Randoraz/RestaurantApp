@@ -88,7 +88,7 @@ export const Reservations = () => {
                 <input id="email" type="email" onChange={handleEmailOnChange} value={email} required></input>
                 <br></br>
 
-                <button type="submit" className="submit-order-button" onClick={handleSubmit}>Reserve</button>
+                <button type="submit" className="submit-order-button"  aria-label="Reserve" onClick={handleSubmit}>Reserve</button>
             </form>
         </div>
     );

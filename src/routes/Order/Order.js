@@ -102,7 +102,7 @@ export const Order = () => {
                 <textarea id="request" onChange={handleRequestOnChange} value={request}></textarea>
                 <br></br>
 
-                <button type="submit" className="submit-order-button" onClick={handleSubmit}>Place order</button>
+                <button type="submit" aria-label="Place order" className="submit-order-button" onClick={handleSubmit}>Place order</button>
             </form>
         </div>
     );
