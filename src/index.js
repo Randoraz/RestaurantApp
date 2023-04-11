@@ -2,7 +2,7 @@ import React from 'react';
 import { createRoot } from 'react-dom/client';
 import { Provider } from 'react-redux';
 import { store } from './store/store';
-import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import { createHashRouter, RouterProvider } from 'react-router-dom';
 import Root from './routes/Root/Root';
 import App from './routes/App/App';
 import MenuPage from './routes/MenuPage/MenuPage';
@@ -15,9 +15,9 @@ import './index.css';
 const container = document.getElementById('root');
 const root = createRoot(container);
 
-const router = createBrowserRouter([
+const router = createHashRouter([
   {
-    path: "/",
+    path: "/*",
     element: <Root />,
     children: [
       {
