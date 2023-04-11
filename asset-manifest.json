@@ -1,0 +1,37 @@
+{
+  "files": {
+    "main.css": "/RestaurantApp/static/css/main.eb3edffe.css",
+    "main.js": "/RestaurantApp/static/js/main.5ad6ff36.js",
+    "static/js/787.26da9b02.chunk.js": "/RestaurantApp/static/js/787.26da9b02.chunk.js",
+    "static/media/japanese-dishes-full.webp": "/RestaurantApp/static/media/japanese-dishes-full.33fd3bab6398cf325407.webp",
+    "static/media/sushi-combo-full.webp": "/RestaurantApp/static/media/sushi-combo-full.9ad1daef7ae6e352a736.webp",
+    "static/media/hero-image-full.webp": "/RestaurantApp/static/media/hero-image-full.66374c546dfdfc04f999.webp",
+    "static/media/katsu-full.webp": "/RestaurantApp/static/media/katsu-full.913bd16651b94bb2d3c2.webp",
+    "static/media/tayaki-full.webp": "/RestaurantApp/static/media/tayaki-full.5cb027c81b1bed1a5116.webp",
+    "static/media/udon-full.webp": "/RestaurantApp/static/media/udon-full.53a56d67bdc60fa646e0.webp",
+    "static/media/ramen-full.webp": "/RestaurantApp/static/media/ramen-full.9a88f0cfb58fd1cfab04.webp",
+    "static/media/soba-full.webp": "/RestaurantApp/static/media/soba-full.21b1fe7d53547744778c.webp",
+    "static/media/rice-full.webp": "/RestaurantApp/static/media/rice-full.f1ed20543eb563cca4f4.webp",
+    "static/media/takoyaki-full.webp": "/RestaurantApp/static/media/takoyaki-full.bfc553fa337afb533674.webp",
+    "static/media/gyoza-full.webp": "/RestaurantApp/static/media/gyoza-full.d8d094ac4858e97c970b.webp",
+    "static/media/sushi-full.webp": "/RestaurantApp/static/media/sushi-full.476fb27c0ab017566d43.webp",
+    "static/media/sushi-combo-icon.jpg": "/RestaurantApp/static/media/sushi-combo-icon.ff465e245239d525068d.jpg",
+    "static/media/ramen-icon.jpg": "/RestaurantApp/static/media/ramen-icon.0de1d6489d3de4edbbbc.jpg",
+    "static/media/tayaki-icon.jpg": "/RestaurantApp/static/media/tayaki-icon.eb173e178fc26549137b.jpg",
+    "static/media/udon-icon.jpg": "/RestaurantApp/static/media/udon-icon.7c9b2d7723dfd8949808.jpg",
+    "static/media/soba-icon.jpg": "/RestaurantApp/static/media/soba-icon.f7d97da06c3d48f0df80.jpg",
+    "static/media/katsu-icon.jpg": "/RestaurantApp/static/media/katsu-icon.852f89374ef6e8bd4594.jpg",
+    "static/media/takoyaki-icon.jpg": "/RestaurantApp/static/media/takoyaki-icon.65d04df6116d8783206c.jpg",
+    "static/media/rice-icon.jpg": "/RestaurantApp/static/media/rice-icon.a56c4b5456fd8cdd7390.jpg",
+    "static/media/gyoza-icon.jpg": "/RestaurantApp/static/media/gyoza-icon.531bfbdd2347cd63a244.jpg",
+    "static/media/sushi-icon.jpg": "/RestaurantApp/static/media/sushi-icon.962cf610cd751fe6f526.jpg",
+    "index.html": "/RestaurantApp/index.html",
+    "main.eb3edffe.css.map": "/RestaurantApp/static/css/main.eb3edffe.css.map",
+    "main.5ad6ff36.js.map": "/RestaurantApp/static/js/main.5ad6ff36.js.map",
+    "787.26da9b02.chunk.js.map": "/RestaurantApp/static/js/787.26da9b02.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.eb3edffe.css",
+    "static/js/main.5ad6ff36.js"
+  ]
+}
