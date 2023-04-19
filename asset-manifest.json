@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/RestaurantApp/static/css/main.eb3edffe.css",
+    "main.css": "/RestaurantApp/static/css/main.04d7bbbb.css",
     "main.js": "/RestaurantApp/static/js/main.5ad6ff36.js",
     "static/js/787.26da9b02.chunk.js": "/RestaurantApp/static/js/787.26da9b02.chunk.js",
     "static/media/japanese-dishes-full.webp": "/RestaurantApp/static/media/japanese-dishes-full.33fd3bab6398cf325407.webp",
@@ -26,12 +26,12 @@
     "static/media/gyoza-icon.jpg": "/RestaurantApp/static/media/gyoza-icon.531bfbdd2347cd63a244.jpg",
     "static/media/sushi-icon.jpg": "/RestaurantApp/static/media/sushi-icon.962cf610cd751fe6f526.jpg",
     "index.html": "/RestaurantApp/index.html",
-    "main.eb3edffe.css.map": "/RestaurantApp/static/css/main.eb3edffe.css.map",
+    "main.04d7bbbb.css.map": "/RestaurantApp/static/css/main.04d7bbbb.css.map",
     "main.5ad6ff36.js.map": "/RestaurantApp/static/js/main.5ad6ff36.js.map",
     "787.26da9b02.chunk.js.map": "/RestaurantApp/static/js/787.26da9b02.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.eb3edffe.css",
+    "static/css/main.04d7bbbb.css",
     "static/js/main.5ad6ff36.js"
   ]
 }
