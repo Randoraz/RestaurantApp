@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/RestaurantApp/static/css/main.b29e7a31.css",
-    "main.js": "/RestaurantApp/static/js/main.f3181f43.js",
+    "main.js": "/RestaurantApp/static/js/main.eb718f67.js",
     "static/js/787.26da9b02.chunk.js": "/RestaurantApp/static/js/787.26da9b02.chunk.js",
     "static/media/japanese-dishes-full.webp": "/RestaurantApp/static/media/japanese-dishes-full.33fd3bab6398cf325407.webp",
     "static/media/sushi-combo-full.webp": "/RestaurantApp/static/media/sushi-combo-full.9ad1daef7ae6e352a736.webp",
@@ -27,11 +27,11 @@
     "static/media/sushi-icon.jpg": "/RestaurantApp/static/media/sushi-icon.962cf610cd751fe6f526.jpg",
     "index.html": "/RestaurantApp/index.html",
     "main.b29e7a31.css.map": "/RestaurantApp/static/css/main.b29e7a31.css.map",
-    "main.f3181f43.js.map": "/RestaurantApp/static/js/main.f3181f43.js.map",
+    "main.eb718f67.js.map": "/RestaurantApp/static/js/main.eb718f67.js.map",
     "787.26da9b02.chunk.js.map": "/RestaurantApp/static/js/787.26da9b02.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.b29e7a31.css",
-    "static/js/main.f3181f43.js"
+    "static/js/main.eb718f67.js"
   ]
 }
