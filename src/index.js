@@ -2,7 +2,7 @@ import React from 'react';
 import { createRoot } from 'react-dom/client';
 import { Provider } from 'react-redux';
 import { store } from './store/store';
-import { createHashRouter, RouterProvider } from 'react-router-dom';
+import { createHashRouter, RouterProvider, Navigate } from 'react-router-dom';
 import Root from './routes/Root/Root';
 import App from './routes/App/App';
 import MenuPage from './routes/MenuPage/MenuPage';
@@ -40,6 +40,10 @@ const router = createHashRouter([
         path: "address",
         element: <Address />
       },
+      {
+        path: "*",
+        element: <Navigate to="/" />
+      }
     ]
   },
 ]);
