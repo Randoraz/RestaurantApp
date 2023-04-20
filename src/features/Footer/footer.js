@@ -16,7 +16,7 @@ const Footer = () => {
             </div>
             <div className="copyright">
                 <p>© Copyright Atatakai 2023</p>
-                <a href="https://www.flaticon.com/free-icons/sushi" target="_blank" title="sushi icons">Sushi icons created by amonrat rungreangfangsai - Flaticon</a>
+                <a href="https://www.flaticon.com/free-icons/sushi" target="_blank" rel="noreferrer" title="sushi icons">Sushi icons created by amonrat rungreangfangsai - Flaticon</a>
             </div>
         </footer>
     );
