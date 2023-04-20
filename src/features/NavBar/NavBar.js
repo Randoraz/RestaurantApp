@@ -1,23 +1,23 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import './NavBar.css';
 
 export const NavBar = () => {
     return (
         <nav id="navbar">
-            <Link to={""} id="restaurant-logo">Atatakai</Link>
+            <NavLink to={""} id="restaurant-logo">Atatakai</NavLink>
             <ul id="navbar-links">
                 <li className="navbar-list">
-                    <Link to={"menu"} className="header-link">Menu</Link>
+                    <NavLink to={"menu"} className="header-link">Menu</NavLink>
                 </li>
                 <li className="navbar-list">
-                    <Link to={"reservations"} className="header-link">Reservations</Link>
+                    <NavLink to={"reservations"} className="header-link">Reservations</NavLink>
                 </li>
                 <li className="navbar-list">
-                    <Link to="order" className="header-link">Order</Link>
+                    <NavLink to="order" className="header-link">Order</NavLink>
                 </li>
                 <li className="navbar-list">
-                    <Link to={"address"} className="header-link">Address</Link>
+                    <NavLink to={"address"} className="header-link">Address</NavLink>
                 </li>
             </ul>
         </nav>
